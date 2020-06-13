@@ -13,6 +13,7 @@ import { DetailsComponent } from './details/details.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { QuotesDetailsComponent } from './quotes-details/quotes-details.componen
     DetailsComponent,
     DateCountPipe,
     QuotesFormComponent,
-    QuotesDetailsComponent
+    QuotesDetailsComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
