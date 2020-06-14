@@ -1,8 +1,8 @@
-import { Quote } from './quotes';
+import { Quote } from './quote';
 
 const newQuote = (Quote);
 describe('Quote', () => {
   it('should create an instance', () => {
-    expect(newQuote).toBeTruthy();
+    expect(new Date).toBeTruthy();
   });
 });

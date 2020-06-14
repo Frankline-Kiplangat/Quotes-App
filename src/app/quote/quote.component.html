@@ -1,0 +1,19 @@
+<h1>Amazing Quotes</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div>
+          <h6 id={{i}} appStrikethrough>{{quote.name}} Published on {{quote.completeDate|date|uppercase}}</h6>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+        </div>
+        <div *ngIf='quote.showDescription'>
+          <app-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-detail>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-form (addQuote)="addNewQuote($event)"></app-form>
+    </div>
+  </div>
+  <p *ngIf='quotes.length > 5'>This is the end of your quotes</p>
+</div>
