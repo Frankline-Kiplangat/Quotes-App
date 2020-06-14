@@ -5,11 +5,11 @@
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
           <div>
-            <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}" appStrikethrough><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
+            <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}" appQuotes><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
           </div>
           <div *ngIf='quotes.showDescription'>
-            <app-details [quote]="quote"></app-details>
+            <app-details [quotes]="quotes"></app-details>
             <button class="btn btn-info" (click)="likes(i)">👍</button>
             <button class="btn btn-info" (click)="dislikes(i)">👎</button>
             <button class="btn btn-danger" (click)="delQuote(i)">Delete😏</button>
