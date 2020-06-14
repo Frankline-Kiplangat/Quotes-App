@@ -1,8 +1,7 @@
 import { Quote } from './quotes';
-import { Quotes } from './quotes.directive';
 
-describe('Quotes', () => {
+describe('Quote', () => {
   it('should create an instance', () => {
-    expect(new Quotes()).toBeTruthy();
+    expect(new Quote()).toBeTruthy();
   });
 });
