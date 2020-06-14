@@ -38,4 +38,4 @@ To view this page, use the link:
 
 # License 
 * MIT License
-* Copyright &copy **Frankline-Kiplangat || 2020**
+* Copyright (c) **Frankline-Kiplangat || 2020**
