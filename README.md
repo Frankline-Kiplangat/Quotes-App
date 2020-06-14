@@ -12,7 +12,7 @@ Frankline-Kiplangat: https://github.com/Frankline-Kiplangat
 * Angular CLI
 
 # Live Demo
-To view this page, use the link: 
+To view this page, use the link: https://frankline-kiplangat.github.io/Quotes-App/
 
 ## Known Bugs
 * The page works as expected so there are no bugs. 

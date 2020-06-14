@@ -1,0 +1,22 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { AppComponent } from '../app.component';
+import { QuoteComponent } from '../quote/quote.component';
+import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
+import { StrikethroughDirective } from '../strikethrough.directive';
+import { DateCountPipe } from '../date-count.pipe';
+@NgModule({
+  declarations: [
+    AppComponent,
+    QuoteComponent,
+    QuoteDetailComponent,
+    StrikethroughDirective,
+    DateCountPipe
+  ],
+  imports: [
+    CommonModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

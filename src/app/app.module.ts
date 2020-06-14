@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DetailsComponent } from './details/details.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteComponent } from './quote/quote.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
-import { FormComponent } from './form/form.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent,
+    QuoteDetailComponent,
     QuoteComponent,
     StrikethroughDirective,
     DateCountPipe,
-    FormComponent,
+    QuoteFormComponent,
   ],
   bootstrap: [AppComponent],
   imports: [
