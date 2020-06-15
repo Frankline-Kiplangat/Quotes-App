@@ -3,49 +3,28 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
     "Quotes": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
-=======
-    "Quotes-app": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-<<<<<<< HEAD
             "outputPath": "dist/Quotes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-=======
-            "outputPath": "dist/Quotes-app",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": true,
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
-=======
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
               "src/styles.css"
             ],
             "scripts": []
@@ -63,58 +42,28 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-<<<<<<< HEAD
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
-=======
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "4mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "140kb",
-                  "maximumError": "150kb"
-                }
-              ]
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-<<<<<<< HEAD
             "browserTarget": "Quotes:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "Quotes:build:production"
-=======
-            "browserTarget": "Quotes-app:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "Quotes-app:build:production"
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-<<<<<<< HEAD
             "browserTarget": "Quotes:build"
-=======
-            "browserTarget": "Quotes-app:build"
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
           }
         },
         "test": {
@@ -122,7 +71,6 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-<<<<<<< HEAD
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
@@ -133,38 +81,19 @@
               "src/favicon.ico",
               "src/assets"
             ]
-=======
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-<<<<<<< HEAD
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
-=======
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-<<<<<<< HEAD
         }
       }
     },
@@ -172,14 +101,10 @@
       "root": "e2e/",
       "projectType": "application",
       "architect": {
-=======
-        },
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-<<<<<<< HEAD
             "devServerTarget": "Quotes:serve"
           }
         },
@@ -190,27 +115,10 @@
             "exclude": [
               "**/node_modules/**"
             ]
-=======
-            "devServerTarget": "Quotes-app:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "Quotes-app:serve:production"
-            }
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
           }
         }
       }
     }
   },
-<<<<<<< HEAD
-  "defaultProject": "Quotes",
-  "cli": {
-    "analytics": "4f9606e3-8863-4ef3-b194-3ef63f9ea02c"
-=======
-  "defaultProject": "Quotes-app",
-  "cli": {
-    "analytics": "c0be9686-08d3-4d4b-b16a-1769289de14d"
->>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
-  }
+  "defaultProject": "Quotes"
 }
