@@ -6,10 +6,9 @@
   <div class="col-md-6">
  <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-    <h4 id="{{i}}" appHighlight>{{quote.message}} <br>Designed on 
-      {{quote.entryDate|date}}</h4>
+    <h4 id="{{i}}" appHighlight>{{quote.message}} <br> on {{quote.entryDate|date}}</h4>
 
-    <button (click)='toogleDetails(i)' class="btn btn-info">Show Author</button>
+    <button (click)='toogleDetails(i)' class="btn btn-info">More Deatails</button>
 
     <div class ="row" *ngIf="quote.showDetails">
     <app-quote-details  [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-details>
