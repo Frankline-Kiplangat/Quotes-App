@@ -36,4 +36,8 @@ To view this page, use the link: https://frankline-kiplangat.github.io/Quotes-Ap
 
 # License 
 * MIT License
+<<<<<<< HEAD
 * Copyright (c) **Frankline-Kiplangat || 2020**
+=======
+* Copyright (c) **Frankline-Kiplangat || 2020**
+>>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f

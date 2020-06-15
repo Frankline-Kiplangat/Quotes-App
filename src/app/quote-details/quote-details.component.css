@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 button.btn.btn-default.btn-sm{
   margin: 15px 10px 15px 0px;
 }
 .vote{
   margin: 0px 10px 0px 0px;
 }
+=======
+@import "~bootstrap/dist/css/bootstrap.css"
+>>>>>>> c949f446eaa418e47b5cac74a14cf36d51aa103f
