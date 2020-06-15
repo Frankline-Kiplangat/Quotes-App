@@ -1,10 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
 .Home{
-  background-color: chartreuse;
+  background-color: rgb(10, 240, 248);
 }
-.Gen{
-  background-color: chartreuse;
-}
+
 .body{
   background-image: url("./assets/img/Best-HD-Backgrounds-Photos-Download.jpg")
+}
+h2{
+  color: coral;
 }
