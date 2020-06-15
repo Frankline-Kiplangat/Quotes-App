@@ -1,1 +1,10 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+/* You can add global styles to this file, and also import other style files */
+.Home{
+  background-color: chartreuse;
+}
+.Gen{
+  background-color: chartreuse;
+}
+.body{
+  background-image: url("./assets/img/Best-HD-Backgrounds-Photos-Download.jpg")
+}
