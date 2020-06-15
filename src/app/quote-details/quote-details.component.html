@@ -1,4 +1,9 @@
 <p>{{quote.details}}</p>
-<p>This quote was published on {{quote.entryDate|dateCount}} days</p>
-<button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Delete Quote</button>
-
+<p>This quote was designed in{{quote.entryDate|dateCount}} days</p>
+<button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Delete Quote😠</button>
+<div>
+    <button (click)= "upvotes(i)" class="btn btn-success">Upvote👍</button>
+    <br> <br>
+    <button (click)= "downvotes(i)" class="btn btn-success">Downvote👎</button>
+  
+  </div>

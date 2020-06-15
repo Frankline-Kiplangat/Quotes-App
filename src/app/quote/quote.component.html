@@ -1,14 +1,15 @@
 <div class=Gen>
 <div class="container-fluid">
-    <h1>Amazing Quotes</h1>
+    <h1>Amazing Quotes!</h1>
   <hr>
   <div class="row">
   <div class="col-md-6">
  <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-    <h4 id="{{i}}" appHighlight>{{quote.message}} <br>Published on  {{quote.entryDate|date}}</h4>
+    <h4 id="{{i}}" appHighlight>{{quote.message}} <br>Designed on 
+      {{quote.entryDate|date}}</h4>
 
-    <button (click)='toogleDetails(i)' class="btn btn-info">Toggle Deatails</button>
+    <button (click)='toogleDetails(i)' class="btn btn-info">Show Author</button>
 
     <div class ="row" *ngIf="quote.showDetails">
     <app-quote-details  [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-details>
@@ -16,6 +17,7 @@
 
       </div>
          </ul>
+         
    </div>
 
     <div class="col-md-6">
