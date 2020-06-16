@@ -12,7 +12,8 @@ export class QuoteComponent implements OnInit {
     new Quote(1,'Frank','Life becomes easier when you learn to accept the apology you never got.','TYler Brian', new Date(2018,4,27),0,0),
     new Quote(2,'Frank','The only thing I know is that I know nothing','Shakespear',new Date(2018,4,28),0,0),
     new Quote(3,'Frank', 'A good novel tells us the truth about its hero; but a bad novel tells us the truth about its author.','Dux Man',new Date(2018,4,28),0,0),
-    new Quote(4,'Elly', 'What I like in a good author is not what he says, but what he whispers','Bazuu',new Date(2018,4,28),0,0)
+    new Quote(4,'Elly', 'What I like in a good author is not what he says, but what he whispers','Bazuu',new Date(2018,4,28),0,0),
+    new Quote(5, 'Dee', 'Of importance is life', 'Unknown',new Date (2017,4,12),0,0)
   ];
 
   deleteQuote(isComplete,index){
