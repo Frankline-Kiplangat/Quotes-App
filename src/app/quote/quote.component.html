@@ -1,8 +1,6 @@
-<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-<div class="wrapper">
-
+<div class="container">
 <div>
-<h1>Quotes~App</h1>
+<h1>Amazing Quotes~App</h1>
 </div>
 <div id="main">
   <div class="container-fluid">
@@ -17,22 +15,17 @@
       </div>
     </div>
   </div>
-
 </div>
-<div id="quotesection">
+<div id="quote-section">
 <div class="container-fluid">
   <div class="row">
-
-
-        <div class="col-sm-6 col-md-4 col-lg-4 quotes" *ngFor="let quote of quotes;let i = 'index'">
+        <div class="col-sm-6 quotes" *ngFor="let quote of quotes;let i = 'index'">
           <div class="card">
             <div class="card-body" >
                 <p class="quotedescription" id="{{i}}">"{{quote.description}}"</p>
-
             </div>
                 <div class="card-footer">
-                  <p id="author">~ Author: {{quote.author}} | Submitted {{quote.completeDate|dateCount}} hours ago</p>
-                  <p id= "date">Date: {{newDate}} </p>
+                  <p id="author">Author: {{quote.author}} Submitted {{quote.completeDate|dateCount}} hours ago</p>
                   <div class="moredetails">
                     <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
                   </div>
@@ -41,16 +34,8 @@
                 </div>
                 </div>
           </div>
-
-
-
-
-
         </div>
-
-
   </div>
-
 </div>
 </div>
 

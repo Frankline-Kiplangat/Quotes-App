@@ -26,7 +26,7 @@ export class QuoteDetailsComponent implements OnInit {
 
 
 
-
+zz
   constructor() { }
 
   ngOnInit() {
